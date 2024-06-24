@@ -1,0 +1,162 @@
+ Python Basics
+Python:
+
+Python is a high-level, interpreted programming language known for its simplicity and readability.
+
+Key Features:
+Easy-to-read syntax: Uses indentation instead of braces.
+Dynamic typing: Variables do not need explicit declaration.
+Extensive standard library: Provides built-in modules for various tasks.
+Interpreted and interactive: Allows for quick development and testing.
+Cross-platform: Runs on Windows, macOS, Linux, and more.
+
+Use Cases:
+Web development (Django, Flask)
+Data analysis and visualization (Pandas, Matplotlib)
+Automation (scripting, task scheduling)
+Machine learning and artificial intelligence (TensorFlow, PyTorch)
+
+2. Installing Python
+Steps to Install Python:
+
+Windows:
+
+Download Python installer from python.org.
+Run the installer, select "Add Python to PATH", and click "Install Now".
+Verify installation: Open Command Prompt and type python --version.
+Set up a virtual environment: python -m venv myenv.
+macOS:
+
+Install Homebrew (if not installed).
+Open Terminal and run brew install python.
+Verify installation: python3 --version.
+Set up a virtual environment: python3 -m venv myenv.
+Linux (Ubuntu/Debian):
+
+Open Terminal and run sudo apt-get update.
+Install Python: sudo apt-get install python3.
+Verify installation: python3 --version.
+Set up a virtual environment: python3 -m venv myenv.
+3. Python Syntax and Semantics
+python
+
+
+print("Hello, World!")
+Explanation:
+print(): Python built-in function to output text.
+"Hello, World!": String literal enclosed in double quotes.
+4. Data Types and Variables
+Basic Data Types:
+
+Integer: int (e.g., x = 10)
+Float: float (e.g., y = 3.14)
+String: str (e.g., name = "John")
+Boolean: bool (e.g., is_valid = True)
+python
+
+# Example script demonstrating variables and data types
+x = 10        # Integer
+y = 3.14      # Float
+name = "John" # String
+is_valid = True  # Boolean
+
+# Print variables
+print(x, y, name, is_valid)
+5. Control Structures
+Conditional Statements and Loops:
+
+if-else statement:
+
+python
+
+if condition:
+    
+else:
+    
+for loop:
+
+python
+
+for item in iterable:
+  
+6. Functions in Python
+Functions:
+
+Functions are blocks of reusable code that perform a specific task.
+Example:
+python
+
+def add_numbers(a, b):
+    return a + b
+result = add_numbers(3, 5)
+print("Sum:", result)
+7. Lists and Dictionaries
+Lists vs Dictionaries:
+
+Lists: Ordered collection of items (mutable).
+Dictionaries: Key-value pairs (mutable, unordered).
+python
+
+
+numbers = [1, 2, 3, 4, 5]
+
+
+person = {"name": "John", "age": 30, "city": "New York"}
+
+
+print(numbers[0])        # Access first element of list
+print(person["name"])    # Access value by key in dictionary
+
+
+numbers.append(6)        # Add element to list
+person["age"] = 31       # Update value in dictionary
+
+
+print(numbers)
+print(person)
+8. Exception Handling
+Exception Handling:
+
+try-except-finally blocks:
+python
+
+
+    
+except Exception as e:
+    
+    print("Error:", e)
+finally:
+    
+9. Modules and Packages
+Modules and Packages:
+
+Module: A file containing Python definitions and statements.
+Package: A directory containing multiple modules.
+python
+
+
+import math
+
+
+x = math.sqrt(25)
+print("Square root:", x)
+10. File I/O
+File Input/Output:
+
+Reading from a file:
+
+python
+
+
+with open("file.txt", "r") as file:
+    content = file.read()
+    print(content)
+Writing to a file:
+
+python
+
+
+data = ["Line 1", "Line 2", "Line 3"]
+with open("output.txt", "w") as file:
+    for line in data:
+        file.write(line + "\n")
